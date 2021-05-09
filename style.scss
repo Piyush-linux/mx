@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Montserrat:wght@300;400;500;700&family=Roboto+Mono:wght@300;400;500;600&display=swap');
 $c1:#30336b;
 $black:#323030;
+$f1:Roboto Mono;
+$f2:Montserrat;
+$f3:IBM Plex Mono;
+
 *{
 	margin: 0;
 	padding: 0;
-
 }
-$f1:Roboto Mono;
-$f2:Dosis;
 .dash{
 	width: 90%;
 	background-color:$black;
@@ -28,7 +31,23 @@ $f2:Dosis;
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	font-family:$f1;
+	font-family:$f3;
+}
+// media
+@media (max-width: 420px){
+	html{
+		font-size: 8px;
+	}
+}
+@media (max-width: 550px){
+	html{
+		font-size: 9px;
+	}
+}
+@media (max-width: 750px){
+	html{
+		font-size: 10px;
+	}
 }
 // nav
 nav{
@@ -38,10 +57,12 @@ nav{
 	flex-direction: column;
 	align-items: right;
 	.nav-links{
-		padding:1rem;
+		// padding:1rem;
 		display: flex;
 		a{
+			margin-right: 1rem;
 			padding:1rem;
+			letter-spacing:1px;
 			color:#323030;
 			text-decoration: none;
 			font-family:$f1;
@@ -52,8 +73,8 @@ nav{
 // hero
 .hero{
 
-// 	// background: linear-gradient(rgba(224,86,253,0.2),rgba(48,51,107,0.1)), url("bg.jpg") no-repeat center / cover;
-	background: linear-gradient(rgba(224,86,253,0.1),rgba(255,255,255,0.2)), url("bg.jpg") no-repeat center / cover;
+	background: url("bg1.jpg") no-repeat center / cover;
+	// background: linear-gradient(rgba(224,86,253,0.1),rgba(255,255,255,0.4)), url("bg.jpg") no-repeat center / cover;
 	color:#fff;
 	width: 100%;
 	height: 90vh;
@@ -61,12 +82,14 @@ nav{
 	font-family: $f2;
 	h1{
 		font-size: 7rem;
-		
+		margin-bottom: 3px;
 	}
 	h6{
 		font-size: 1.5rem;
-	font-weight: bold;
+	// font-weight: bold;
 	font-family:$f1;
+	width: 30%;
+	text-align: center;
 	}
 	.button{
 		color:#fff;
@@ -93,7 +116,7 @@ nav{
 		width: 80%;
 		text-align: center;
 		font-family:$f2;
-		font-weight: bold;
+		// font-weight: bold;
 	}
 }
 
@@ -111,11 +134,36 @@ nav{
 		}
 	}
 }
-
+.row{
+	margin-top: 3rem;
+}
 .de{
 	@extend %center;
 	font-family:$f2;	
 	li{
 		font-size: 1.5rem;
+	}
+}
+.dee{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:auto;
+
+	img{
+		height:auto;
+	}
+}
+// footer
+footer{
+	@extend %center;
+	background-color:$black;
+	color:#fff;
+	border-radius: 5px;
+	p{
+		margin:0 auto;
+		padding:1rem;
+		font-family:$f3;
+		font-size: 1.3rem;
 	}
 }

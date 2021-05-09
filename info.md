@@ -16,6 +16,12 @@
 - footer
 
 ```yaml
+# SiteMap
+Primary: {
+   HOME: "main page",
+   aboutUs: ,
+   Downloads: [kde,flux,xfce]
+   }
 # Wireframe
 hero:
    - bg-img

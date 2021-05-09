@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <title>MX </title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- navbar -->
+        <div class="row">
+            <nav class="nav">
+                <div class="nav-links">
+                    <a href="HOME">Home</a>
+                    <a href="HOME">About</a>
+                    <a href="HOME">Support</a>
+                    <select>
+                        <option value=op1>
+                            Option1
+                        </option>
+                        <option value=op2>option2</option>
+                        <option value=op3>option3</option>
+                        <option value=op4>option3</option>
+                    </select>
+                </div>
+            </nav>
+            <!-- hero -->
+            <div class="row">
+                <section class="hero">
+                    <h1>MX Linux</h1>
+                    <h6>Yet another minimal Linux distribution, based on Arch Linux. </h6>
+                    <div class="buttons">
+                        <button class="button">XFCE</button>
+                        <button class="button">KDE</button>
+                        <button class="button">FLUX</button>
+                    </div>
+                    <div class="icons">
+                        <span class="icon">
+                            <span class="iconify" data-icon="brandico:facebook-rect" data-inline="false"></span>
+                        </span>
+                        <span class="icon">
+                            <span class="iconify" data-icon="fa-brands:reddit-square" data-inline="false"></span>
+                        </span>
+                        <span class="icon">
+                            <span class="iconify" data-icon="fa-brands:twitter-square" data-inline="false"></span>
+                        </span>
+                        <span class="icon">
+                            <span class="iconify" data-icon="ri:mastodon-line" data-inline="false"></span>
+                        </span>
+                        <span class="icon">
+                            <span class="iconify" data-icon="fa-brands:youtube-square" data-inline="false"></span>
+                        </span>
+                    </div>
+                </section>
+            </div>
+            <!-- about -->
+            <!-- <div class="row">
+                <section id="about">
+                    <h1 class="title">ABOUT US
+                        <div class="dash"></div>
+                    </h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde aperiam aliquam autem, repellendus inventore modi, id ipsum fuga, blanditiis corrupti voluptatem ipsa odio quibusdam, vitae laborum commodi iste. Officiis, voluptate.</p>
+                </section>
+            </div> -->
+            <hr>
+            <!-- video -->
+            <!--  <div class="row">
+                <section id="video">
+                    <h1 class="title">Video
+                        <div class="dash"></div>
+                    </h1>
+                    <div class="vds">
+                        <div class="vd">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6wVfGmdW8Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="vd">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6wVfGmdW8Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="vd">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6wVfGmdW8Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+            </div> -->
+            <hr>
+            <!-- de-1 -->
+            <div class="row">
+                <div class="six columns de">
+                    <h1>XFCE</h1>
+                    <ul>
+                        <li>Modular core components for the full functionality expected from a modern desktop environment.</li>
+                        <li>A collection of powerful and handy “MX Tools” that cover a range of actions from Boot Options to Repository management.</li>
+                        <li>A fast Package Installer covering Popular Applications, MX Test Repo, Debian Backports and Flatpaks.</li>
+                        <li>An extensive collection of wallpapers, themes, conkies and icon sets for customization.</li>
+                    </ul>
+                </div>
+                <div class="six columns">
+                    <img src="https://mxlinux.org/wp-content/uploads/2020/07/mx-xfcetools-1024x576.jpg" width="100%">
+                </div>
+            </div>
+            <!-- de-2 -->
+            <div class="row">
+                <div class="six columns">
+                    <img src="https://mxlinux.org/wp-content/uploads/2020/07/mx-xfcetools-1024x576.jpg" width="100%">
+                </div>
+                <div class="six columns de">
+                    <h1>KDE</h1>
+                    <ul>
+                        <li>Modular core components for the full functionality expected from a modern desktop environment.</li>
+                        <li>A collection of powerful and handy “MX Tools” that cover a range of actions from Boot Options to Repository management.</li>
+                        <li>A fast Package Installer covering Popular Applications, MX Test Repo, Debian Backports and Flatpaks.</li>
+                        <li>An extensive collection of wallpapers, themes, conkies and icon sets for customization.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- de-3 -->
+        </div>
+    </div>
+    <!-- script -->
+    <script type="text/javascript">
+    let sel = document.querySelector('select');
+    sel.onchange = (e) => {
+        console.log(sel.value);
+        window.location.href = "pg/about.html";
+    }
+    </script>
+</body>
+
+</html>

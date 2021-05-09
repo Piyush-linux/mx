@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
+$c1:#30336b;
+$black:#323030;
+*{
+	margin: 0;
+	padding: 0;
+
+}
+$f1:Roboto Mono;
+$f2:Dosis;
+.dash{
+	width: 90%;
+	background-color:$black;
+	height:5px;
+	border-radius: 5px;
+	margin-top:0.5rem;
+}
+%center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.title{
+	font-size: 3rem;
+	letter-spacing: 2px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	font-family:$f1;
+}
+// nav
+nav{
+	width: 100%;
+	display:flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: right;
+	.nav-links{
+		padding:1rem;
+		display: flex;
+		a{
+			padding:1rem;
+			color:#323030;
+			text-decoration: none;
+			font-family:$f1;
+			font-size: 1.5rem;
+		}
+	}
+}
+// hero
+.hero{
+
+// 	// background: linear-gradient(rgba(224,86,253,0.2),rgba(48,51,107,0.1)), url("bg.jpg") no-repeat center / cover;
+	background: linear-gradient(rgba(224,86,253,0.1),rgba(255,255,255,0.2)), url("bg.jpg") no-repeat center / cover;
+	color:#fff;
+	width: 100%;
+	height: 90vh;
+	@extend %center;
+	font-family: $f2;
+	h1{
+		font-size: 7rem;
+		
+	}
+	h6{
+		font-size: 1.5rem;
+	font-weight: bold;
+	font-family:$f1;
+	}
+	.button{
+		color:#fff;
+		font-weight: bolder;
+		font-size: 1.2rem;
+	}
+	.icons{
+		margin-top: 1rem;
+	}
+	.icon{
+		margin:auto 7px;
+	.iconify{
+	font-size: 3rem;
+	}		
+	}
+}
+
+// about
+
+#about{
+		@extend %center;
+		margin-top: 3rem;
+	p{
+		width: 80%;
+		text-align: center;
+		font-family:$f2;
+		font-weight: bold;
+	}
+}
+
+// video
+#video{
+	@extend %center;
+	margin-top: 1rem;
+	.vds{
+		display:flex;
+		width: 100%;
+		.vd{
+			
+			height:30vh;
+			padding: 1rem;
+		}
+	}
+}
+
+.de{
+	@extend %center;
+	font-family:$f2;	
+	li{
+		font-size: 1.5rem;
+	}
+}
